@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Orbitron:wght@400..900&family=Rajdhani:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Comic Neue", cursive;
+}
+.login-page {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin-top: 10px;
+  border: 2px solid #000;
+  padding: 20px;
+  width: 507px;
+  margin-left: 24vw;
+  margin-right: 20vw;
+  border-radius: 15px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.form input {
+  border-color: black;
+  border-radius: 10px;
+  text-indent: 4px;
+  border-style: solid;
+}
+
+input:not(:nth-last-child(-n + 2)) {
+  padding: 6px;
+}
+
+.form p:nth-child(5) {
+  color: red;
+  padding-left: 3px;
+  font-size: small;
+}
+.form-label {
+  font-size: large;
+  font-weight: bold;
+}
+.form-password-container {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-password-container label {
+  font-weight: bold;
+  font-size: large;
+}
+
+.form-password-container input {
+  border: none;
+  outline: none;
+}
+
+.form-password-container i {
+  cursor: pointer;
+  position: absolute;
+}
+
+.form-password {
+  border: 2px solid black;
+  border-radius: 25px;
+  padding: 5px;
+  border-radius: 10px;
+  padding-right: 22px;
+}
+
+.form-password input::placeholder {
+  opacity: 0.5;
+}
+.form-confirm-password {
+  border: 2px solid black;
+  border-radius: 25px;
+  padding: 5px;
+  border-radius: 10px;
+  padding-right: 22px;
+}
+.form-confirm-password input::placeholder {
+  opacity: 0.5;
+}
+#email {
+  color: red;
+  border-color: red;
+  outline: red;
+}
+
+.form button {
+  background-color: #000;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+}
+
+.form button:hover {
+  background-color: #222222;
+}
+
+.form button:active {
+  background-color: #0e0e0e;
+}
+
+.profile-completion {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-right: 10px;
+}
+
+.circle-bar {
+  border: 3px solid;
+  border-radius: 50%;
+  border-right-color: grey;
+  border-top-color: grey;
+  height: 100px;
+  width: 100px;
+  transform: rotate(45deg);
+}
+
+.circle span {
+  position: absolute;
+  font-size: xx-large;
+  font-weight: 600;
+}
+
+.profile-completion h3 {
+  margin-top: 15px;
+  margin-bottom: 50px;
+}
+
+.progress-marker * {
+  margin-top: 5px;
+}
+
+.progress-marker {
+  border: 1px solid gainsboro;
+  padding: 10px;
+  height: 200px;
+  background-color: gainsboro;
+  border-radius: 15px;
+}
+
+.progress-marker p:nth-child(1),
+.progress-marker p:nth-child(2),
+.progress-marker p:nth-child(3) {
+  color: grey;
+  text-decoration: line-through;
+}

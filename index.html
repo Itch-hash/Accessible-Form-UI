@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Form UI
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3fa8f9eb91.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="login-page">
+        <form>
+            <div class="form">
+                <label for="name" class="form-label">Full Name</label>
+                <input type="text" id="name" name="name" required autocomplete="on">
+                <label for="email" class="form-label">Email</label>
+                <input value="john@doe.com" type="email" id="email" name="email" required autocomplete="on">
+                <p>Email is already taken</p>
+                <div class="form-password-container">
+                    <label for="password">Password</label>
+                    <div class="form-password">
+
+                        <input type="password" id="password" name="password" placeholder="xxxxxxxx" required>
+                        <i class="fa-solid fa-eye"></i>
+                    </div>
+                    <label for="password">Confirm Password</label>
+                    <div class="form-confirm-password">
+
+                        <input type="password" id="confirm-password" name="confirm-password" placeholder="xxxxxxxx"
+                            required>
+                        <i class="fa-solid fa-eye"></i>
+                    </div>
+
+                </div>
+                <br>
+                <button type="submit">Update Profile</button>
+            </div>
+        </form>
+        <div class="form-ui">
+            <div class="profile-completion">
+                <div class="circle">
+                    <div class="circle-bar"></div>
+                    <Span>65%</Span>
+                </div>
+                <h3>Profile Completeness</h3>
+            </div>
+
+
+            <div class="progress-marker">
+
+                <p>Create Account</p>
+                <p>Update Roadmap Progress</p>
+                <p>Setup Public Profile</p>
+                <p>Complete your first project</p>
+                <p>Invite your Friends</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
